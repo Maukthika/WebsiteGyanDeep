@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */ 
+#Home {background-color:red;}
+#About {background-color:green;}
+#Donor {background-color:blue;}
+#Login{background-color:orange;}
+
+
+
+
+</style>
+<script>
+function openCity(cityName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(cityName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click(); 
+
+</script>
+</head>
+<body>
+
+<button class="tablink" onclick="openCity('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('About', this, 'green')">About</button>
+<button class="tablink" onclick="openCity('Donor', this, 'blue')">Donor</button>
+<button class="tablink" onclick="openCity('Login', this, 'orange')">Login</button> 
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is the capital city of England.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>About is the capital of France.</p> 
+</div>
+
+<div id="Donor" class="tabcontent">
+  <h3>Donor</h3>
+  <p>Donor is the capital of Japan.</p>
+</div>
+
+<div id="Login" class="tabcontent">
+  <h3>Login</h3>
+  <p>Login is the capital of Norway.</p>
+</div>
+
+
+</body>
+</html>
