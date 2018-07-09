@@ -1,22 +1,167 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+.post
+	{
+		position: static;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		left: 50%;
+		z-index: 1;
+	}
+button {
+	padding: 0px 0px;
+	color:rgb(255, 150, 50);
+	display:inline-block;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+nav {
+	dispaly:inline;
+}
+a {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display:inline;
+}
+h1 {
+    text-indent: 35%;
+    padding:20px;
+	margin:0px;
+	line-height: 0%;
+}
+h4 {
+    text-indent: 42%;
+    padding:20px;
+	margin:0px;
+	line-height: 5%;
+}
+	div.Events{
+    width: 300px;
+    border: 5px solid orange;
+    text-align:center;
+    font-size: 30px;
+    text-weight:bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 155px;
+    padding-bottom: 0px;
+    color:rgb(100, 120, 255);
+    background-image: url(image1.jpg);
+    background-repeat:no-repeat;
+    margin: 60px;
+}	
+	div.Sponsors{
+    width: 300px;
+    border: 5px solid orange;
+    text-align:center;
+    font-size: 30px;
+    text-weight:bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 155px;
+    padding-bottom: 0px;
+    color:rgb(100, 120, 255);
+    background-image: url(image6.jpg);
+    background-repeat:no-repeat;
+    background-size:400px 160px;
+    margin-left: 50%;
+}
 
-button {padding: 0px 0px;}
-h1 {text-align:center;
-	background-color: rgb(51, 152, 255);
-	display:inline;}
+.topnav {
+    background-color: #333;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    overflow: hidden;
+}
+/* Set default styles for tab content */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    background-size: 100px;
+    color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+body{
+background-image: url(background2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
 </style>
-
+<script type="text/javascript">
+    var image1 = new Image()
+    image1.src = "gal1.jpg"
+    var image2 = new Image()
+    image2.src = "image2.jpg"
+</script>
 <link rel = "icon" type = "image/png" href = "Titleicon.png"/>
 <title>Gyan Deep</title>
 </head>
 
 
 <body>
-<button type = "button"><img src = "menuBlue.png" width = "30"/></button>
-<h1>Gyan Deep: Lighting the Dreams!</h1>
+<header class = "post"><h1>The Gyan Deep of India</h1><h4>Lighting the Dreams!</h4>
+</header>
+<p><img src="images/pentagg.jpg" class='post' width="100%" height="400" name="slide" /></p>
+    <script type="text/javascript">
+            var step=1;
+			function slideit()
+            {
+                
+                document.images.slide.src = eval("image"+step+".src")
+                if(step<2)
+                    step++
+                else
+                    step=1
+                setTimeout("slideit()",2500)
+            }
+            slideit()
+    </script>
+<div class = "topnav"><nav><a href = "GyanDeep.html">Home</a><a href = "Donation.html">Donate</a>
+<a href = "Volunteer.html">Volunteer</a><a href = "Gallery.html">Gallery</a><a href = "Login.html">Login</a></nav>
+</div>
+<hr/>
+<div class = "Events"><strong>Events and Gatherings</strong>
+</div>
+<div class = "Sponsors"><strong>Sponsors</strong>
+</div>
+<hr/>
 
 </body>
 </html>
