@@ -59,10 +59,26 @@ marquee{
 	color: rgb(204, 0, 0);
 }
 h3 {
+margin-top: 0px;
+margin-bottom: 5px;
 text-align: center;
 font-size: 30px;
 }
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 </style>
+<script type="text/javascript">
+    var image1 = new Image()
+    image1.src = "gal1.jpg"
+    var image2 = new Image()
+    image2.src = "gal2.jpg"
+    var image3 = new Image()
+    image3.src = "gal3.jpg"
+    var image4 = new Image()
+    image4.src = "gal4.jpg"
+</script>
 <link rel = "icon" type = "image/png" href = "Titleicon.png"/>
 <title>Gyan Deep-Galery</title>
 </head>
@@ -70,12 +86,26 @@ font-size: 30px;
 <header class = "post"><h1>The Gyan Deep of India</h1><h4>Lighting the Dreams!</h4>
 </header>
 <div class = "topnav"><nav><a href = "GyanDeep.html">Home</a><a href = "Donation.html">Donate</a>
-<a href = "Volunteer.html">Volunteer</a><a href = "Galery.html">Galery</a><a href = "Login.html">Login</a></nav>
+<a href = "Volunteer.html">Volunteer</a><a href = "Gallery.html">Gallery</a><a href = "Login.html">Login</a></nav>
 </div>
 <br/>
 <br/>
-<h3>Distribution of Books: Jan 26 2K18</h3>
 
-<marquee width = "100%" behaviour = "scroll" id = "circle"><img src = "gal1.jpg" height = "350" width = "500"/><img src = "gal2.jpg" height = "350" width = "500"/><img src = "gal3.jpg" height = "350" width = "500"/><img src = "gal4.jpg" height = "350" width = "500"/></marquee>
+<p><img src="images/pentagg.jpg" class='post' width="100%" height="400" name="slide" /></p>
+    <script type="text/javascript">
+            var step=1;
+			function slideit()
+            {
+                
+                document.images.slide.src = eval("image"+step+".src")
+                if(step<4)
+                    step++
+                else
+                    step=1
+                setTimeout("slideit()",2500)
+            }
+            slideit()
+    </script>
+    <h3>Distribution of Books: Jan 26 2K18</h3>
 </body>
 </html>
