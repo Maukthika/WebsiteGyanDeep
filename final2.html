@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.post
+	{
+		position: static;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		left: 50%;
+		z-index: 1;
+	}
+button {
+	padding: 0px 0px;
+	color:rgb(255, 150, 50);
+	display:inline-block;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+nav {
+	dispaly:inline;
+}
+.fora {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display:inline;
+}
+h1 {
+    text-indent: 35%;
+    padding:20px;
+	margin:0px;
+	line-height: 0%;
+}
+h4 {
+    text-indent: 42%;
+    padding:20px;
+	margin:0px;
+	line-height: 5%;
+}
+	div.Events{
+    width: 300px;
+    border: 5px solid orange;
+    text-align:center;
+    font-size: 30px;
+    text-weight:bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 155px;
+    padding-bottom: 0px;
+    color:rgb(100, 120, 255);
+    background-image: url(image1.jpg);
+    background-repeat:no-repeat;
+    margin: 60px;
+}	
+	div.Sponsors{
+    width: 300px;
+    border: 5px solid orange;
+    text-align:center;
+    font-size: 30px;
+    text-weight:bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 155px;
+    padding-bottom: 0px;
+    color:rgb(100, 120, 255);
+    background-image: url(image6.jpg);
+    background-repeat:no-repeat;
+    background-size:400px 160px;
+    margin-left: 50%;
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+#mySearch {
+  width: 25%;
+  font-size: 18px;
+  padding: 11px;
+  border:1px solid #ddd;
+}
+
+body{
+background-image: url(background2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+<script type="text/javascript">
+    var image1 = new Image()
+    image1.src = "gal1.jpg"
+    var image2 = new Image()
+    image2.src = "image2.jpg"
+</script>
+<link rel = "icon" type = "image/png" href = "Titleicon.png"/>
+<title>Gyan Deep</title>
+<link rel = "stylesheet" type = "text/css" href = "css/lightbox.min.css"/>
+<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+<header class = "post"><h1>The Gyan Deep of India</h1><h4>Lighting the Dreams!</h4>
+</header>
+<p><img src="images/pentagg.jpg" class='post' width="100%" height="400" name="slide" /></p>
+    <script type="text/javascript">
+            var step=1;
+			function slideit()
+            {
+                
+                document.images.slide.src = eval("image"+step+".src")
+                if(step<2)
+                    step++
+                else
+                    step=1
+                setTimeout("slideit()",2500)
+            }
+            slideit()
+    </script>
+<div class="navbar">
+	<a href="final2.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Events and Sponsors</a>
+      <a href="#">Who we are?</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Donate 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Old Books</a>
+      <a href="#"> Money</a>
+      <a href="#">Whom did I help?</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Volunteer 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Register</a>
+      <a href="#">Participate in upcomming events</a>
+      <a href="#">Contact Us</a>
+    </div> 
+  </div>
+  <a href="login.html">Login</a>
+  <input type="text"  id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+</div> 
+<hr/>
+<a href = "images/gal3.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<a href = "images/gal4.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<a href = "images/gal5.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<a href = "images/gal6.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<a href = "images/gal7.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<a href = "images/gal8.jpg" data-lightbox = "mygallery" class="fora"> </a>
+<div class = "Events"><strong>Events and Gatherings</strong>
+</div>
+<div class = "Sponsors"><strong>Sponsors</strong>
+</div>
+<hr/>
+
+</body>
+</html>

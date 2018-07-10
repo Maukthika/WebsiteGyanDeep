@@ -12,7 +12,7 @@ form {
 input[type=text], input[type=password] {
     width: 20%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -91,6 +91,7 @@ h4 {
 	margin:0px;
 	line-height: 5%;
 }
+
 </style>
 <link rel = "icon" type = "image/png" href = "Titleicon.png"/>
 <title>Gyan Deep</title>
@@ -109,18 +110,25 @@ h4 {
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 <br/>
+	<label for="email"><b>Email</b></label>
+    <input type="text" class='pos' placeholder="Enter Username" name="email" required>
+<br/>
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 <br/>
- <span class="psw">Forgot <a href="#">password?</a></span>
- <br/>
-    <button type="submit">Login</button>
+	<label for="cpsw"><b>Confirm</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw" required>
+<br/>
     <label>
 <br/>  
   <input type="checkbox" checked="checked" name="remember"> Remember me
  <br/>  </label> 
-	<a href="signin.html"> <button type='button'>Signin</button></a>
-	</div>
+   
+	<a href="login.html"> <button type='button'>Signin</button></a>
+	
+   
+	 
+  </div>
 </form> 
 </body>
 </html>
