@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Bordered form */
+form {
+    border: 5px solid #f1f1f1;
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 20%;
+    padding: 12px 10px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 14px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+/* Avatar image */
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+	height: 5%;
+	margin-bottom: 0px;
+}
+/* Add padding to containers */
+.container {
+    padding: 10px;
+	margin-left:40%;
+}
+/* The "Forgot password" text */
+span.psw {
+    float: center;
+    padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 200%;
+    }
+} 
+h1 {
+    text-indent: 35%;
+    padding:20px;
+	margin:0px;
+	line-height: 0%;
+}
+h4 {
+    text-indent: 42%;
+    padding:20px;
+	margin:0px;
+	line-height: 5%;
+}
+
+</style>
+<link rel = "icon" type = "image/png" href = "Titleicon.png"/>
+<title>Login</title>
+</head>
+<body>
+<header class = "post"><h1>The Gyan Deep of India</h1><h4>Lighting the Dreams!</h4>
+</header>
+<form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="Avathar2.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br/>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br/>
+ <span class="psw">Forgot <a href="#">password?</a></span>
+ <br/>
+    <button type="submit">Login</button>
+    <label>
+<br/>  
+  <input type="checkbox" checked="checked" name="remember"> Remember me
+ <br/>  </label> 
+
+	<a href="Signup.html"><button type = "button">Sign In</button></a>
+
+  </div>
+</form> 
+</body>
+</html>
